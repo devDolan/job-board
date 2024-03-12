@@ -1,0 +1,59 @@
+#logo {
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 32px;
+}
+
+.signupcontainer {
+    border-bottom: 1px solid black;
+    padding: 0%;
+}
+
+/* i am not too sure why it doesnt let me use the option 'right: 30px'. 
+this was just so it would stay on the right hand side.*/ 
+.login_signup {
+    font-size: 20px;
+    position: relative;
+    left:   2000px;
+    
+}
+
+#Signup {
+    display: inline;
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+
+#Login {
+    display: inline;
+    padding-left: 9px;
+}
+
+.searchbars {
+    margin: auto;
+    text-align: center;
+    
+    
+}
+
+#keywordsbar {
+    margin-right: 30px;
+}
+
+.searchbars input {
+    height: 40px;
+    width: 340px;
+    font-size: 16px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+#searchbarbutton {
+    height:40px;
+    width: 150px;
+    margin-left: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: darkblue;
+}
