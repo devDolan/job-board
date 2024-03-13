@@ -4,7 +4,7 @@
     font-size: 32px;
 }
 
-.signupcontainer {
+.signup_container {
     border-bottom: 1px solid black;
     padding: 0%;
 }
@@ -13,8 +13,8 @@
 this was just so it would stay on the right hand side.*/ 
 .login_signup {
     font-size: 20px;
-    position: relative;
-    left:   2000px;
+   display: flex;
+   justify-content: flex-end;
     
 }
 
@@ -29,31 +29,55 @@ this was just so it would stay on the right hand side.*/
     padding-left: 9px;
 }
 
-.searchbars {
-    margin: auto;
-    text-align: center;
-    
-    
+.search_bars {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
 }
 
-#keywordsbar {
-    margin-right: 30px;
-}
 
-.searchbars input {
+
+.search_bars input {
     height: 40px;
     width: 340px;
     font-size: 16px;
-    margin-top: 30px;
+    
     border-radius: 10px;
 }
 
-#searchbarbutton {
+#search_bar_button {
     height:40px;
     width: 150px;
-    margin-left: 30px;
+    
     border-radius: 10px;
     font-size: 16px;
     color: white;
-    background-color: darkblue;
+    background-color: darkblue; 
+    
+}
+
+
+
+.navigation_bar {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navigation_list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navigation_list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    background-color: lightgrey;
+    border-radius: 10px;
 }
