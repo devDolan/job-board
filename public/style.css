@@ -1,5 +1,9 @@
+html * {
+    font-family: 'Roboto';
+}
+
 #logo {
-    padding-left: 30px;
+    padding-left: 1.875rem;
     padding-top: 30px;
     font-size: 32px;
 }
@@ -80,4 +84,50 @@ this was just so it would stay on the right hand side.*/
     width: 200px;
     background-color: lightgrey;
     border-radius: 10px;
+}
+
+.sort_by {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 59px;
+}
+
+.job_listing_container {
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
+
+#job_listing_card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 500px;
+    width: 1200px;
+    
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px lightgray, -5px 5px 5px lightgray; 
+}
+
+#job_listing_card h2 {
+    margin-left: 30px;
+    margin-top: 30px;
+    
+}
+
+#job_listing_card h3 {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.quick_info ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 60px;
+    
 }
