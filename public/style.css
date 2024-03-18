@@ -1,56 +1,70 @@
-html * {
+* {
     font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    border: 1px solid grey;
 }
 
-#logo {
+li {
+    list-style: none;
+}
+
+h1 {
     padding-left: 1.875rem;
     padding-top: 30px;
     font-size: 32px;
 }
 
-.signup_container {
+#line {
     border-bottom: 1px solid black;
     padding: 0%;
 }
 
-/* i am not too sure why it doesnt let me use the option 'right: 30px'. 
-this was just so it would stay on the right hand side.*/ 
-.login_signup {
+#users ul{
     font-size: 20px;
-   display: flex;
-   justify-content: flex-end;
-    
-}
-
-#Signup {
-    display: inline;
-    border-right: 1px solid black;
-    padding-right: 10px;
-}
-
-#Login {
-    display: inline;
-    padding-left: 9px;
-}
-
-.search_bars {
     display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 0.625rem;
+}
+
+#users a {
+    text-decoration: none;
+    color: black;
+}
+
+#search {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 0.625rem;
     gap: 30px;
 }
 
+#parameters {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
 
+::placeholder {
+    padding-left: 10px;
+}
 
-.search_bars input {
+#location-icon {
+    height: 25px;
+    width: auto;
+}
+
+#parameters input {
     height: 40px;
     width: 340px;
     font-size: 16px;
-    
     border-radius: 10px;
 }
 
-#search_bar_button {
+#search-button {
     height:40px;
     width: 150px;
     
@@ -61,22 +75,20 @@ this was just so it would stay on the right hand side.*/
     
 }
 
-
-
-.navigation_bar {
+#filters {
     display: flex;
     justify-content: center;
     
 }
 
-.navigation_list {
+#filters ul {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 30px;
 }
 
-.navigation_list li {
+#filters li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,23 +98,19 @@ this was just so it would stay on the right hand side.*/
     border-radius: 10px;
 }
 
-.sort_by {
+#sort-by {
     display: flex;
     justify-content: flex-end;
     margin-right: 59px;
 }
 
-.job_listing_container {
+#listings {
     display: flex;
     justify-content: center;
-    
-    
-    
 }
 
-#job_listing_card {
+.card {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     justify-content: flex-start;
     height: 500px;
@@ -110,24 +118,29 @@ this was just so it would stay on the right hand side.*/
     
     border: 1px solid lightgrey;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px lightgray, -5px 5px 5px lightgray; 
-}
-
-#job_listing_card h2 {
-    margin-left: 30px;
-    margin-top: 30px;
+    box-shadow: 5px 5px 5px lightgray, -5px 5px 5px lightgray;
     
+    padding-left: 30px;
 }
 
-#job_listing_card h3 {
-    margin-left: 30px;
+.card > * {
+    padding-top: 30px;
+}
+
+.card h3 {
+    padding-top: 0px;
     margin-top: 10px;
 }
 
-.quick_info ul {
+.quick-info ul {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     gap: 60px;
     
+}
+
+.key-points li {
+    list-style: circle;
+    margin-left: 30px;
 }

@@ -10,59 +10,67 @@
 <body>
     <!-- this is my attempt to get the sign in and log in button, can make them links
         to smth later with href -->
-        <h1 id="logo">Job Board</h1>
-        <div class="signup_container">
-            <div class="login_signup">
+    <h1>Job Board</h1>
+    <section id="users">
+            <ul>
+            <li><a href="#">Signup</a></li>
+            <li>|</li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </section>
+
+    <div id="line"></div>
+
+    <section id="search">
+        <div id="parameters">
+            <input type="text" placeholder="Keywords">
+            <input type="text" placeholder="Location">
+            <img id="location-icon" src="/public/assets/images/location.png" 
+            alt="location-icon">  
+            <button type="button" id="search-button">Search</button>
+        </div>
+        <div id="filters">
+            <ul>
+                <li>Worky Type (Any)</li>
+                <li>Pay Range (Any)</li>
+                <li>Distance (Any km)</li>
+                <li>Locality (Any)</li>
+            </ul>
+        </div>
+        <div id="sort-by">
+            <p>Sort by:</p>
+        </div>
+    </section>
+
+    <section id="listings">
+        <div class="card">
+            <h2>Job Title</h2>
+            <h3>Company Name</h3>
+
+            <div class="quick-info">
                 <ul>
-                    <li id="Signup">Signup</li>
-                    <li id="Login">Login</li>
+                    <li>Location</li>
+                    <li>Work Type</li>
+                    <li>Pay rate/ Salary</li>
                 </ul>
             </div>
-        </div>
-        <section>
-            <div class="search_bars">
-                <input type="text" placeholder="Keywords..." id="keywords_bar">
-                <input type="text" placeholder="Location" id="location_bar">
-                <button type="button" id="search_bar_button">Search</button>
-            </div>
-            <nav class="navigation_bar">
-                <ul class="navigation_list">
-                    <li>Worky Type (Any)</li>
-                    <li>Pay Range (Any)</li>
-                    <li>Distance (Any Km)</li>
-                    <li>Locality (Any)</li>
+
+            <div class="key-points">
+                <ul>
+                    <li>Key point 1</li>
+                    <li>Key point 2</li>
+                    <li>Key point 3</li>
                 </ul>
-            </nav>
-        </section>
-        <div class="sort_by">
-            <h3>Sort By:</h3>
-        </div>
-        <section class="job_listing_container">
-            <div id="job_listing_card">
-                <h2>Job Title</h2>
-                <h3>Company Name</h3>
-                <div class="quick_info">
-                    <ul>
-                        <li>Location</li>
-                        <li>Work Type</li>
-                        <li>Pay rate/ Salary</li>
-                    </ul>
-                </div>
-                <div class="key_points">
-                    <ul>
-                        <li>Key point 1</li>
-                        <li>Key point 2</li>
-                        <li>Key point 3</li>
-                    </ul>
-                </div>
-                <div class="description">
-                    <p>
-                        Description line 1
-                        Description line 2
-                    </p>
-                </div>
             </div>
-        </section>
-    <p>Hello World!</p>
+            
+            <div class="description">
+                <p>
+                    Description line 1
+                    <br>
+                    Description line 2
+                </p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
